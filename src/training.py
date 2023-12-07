@@ -17,11 +17,11 @@ from tqdm import tqdm
 from kaggle_environments import make
 import wandb
 
-from get_data import download_and_extract_dataset
-from data_processing import get_dataset, GeeseDataset
-from model import GeeseNet, create_submission_file
-from utils import create_folders_if_not_exist, get_path_list
-from visualization import create_gif_from_submission
+from .get_data import download_and_extract_dataset
+from .data_processing import get_dataset, GeeseDataset
+from .model import GeeseNet, create_submission_file
+from .utils import create_folders_if_not_exist, get_path_list
+from .visualization import create_gif_from_submission
 
 criterion = {
     "ce": nn.CrossEntropyLoss(),
